@@ -21,7 +21,7 @@ ENV NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 ENV PATH="/usr/local/bin:$PATH"
 
 RUN npm -g i puppeteer --unsafe-perm=true \
-    && npm -g i jest @types/jest
+    && npm -g i jest @types/jest @jest/test-sequencer
 
 # the following line is required to run headfull Chrome with Pptr.
 # BTW, from your host machine, you should run the following command
